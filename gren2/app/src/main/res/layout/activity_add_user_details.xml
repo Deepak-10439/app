@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Add_user_details">
+
+
+    <EditText
+        android:id="@+id/First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="241dp"
+        android:background="@drawable/input_style"
+        android:hint="First Name"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="26dp"
+        android:background="@drawable/input_style"
+        android:hint="Email"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/mobile"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/input_style"
+        android:hint="Mobile Number"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/First"
+        app:layout_constraintTop_toBottomOf="@+id/First" />
+
+    <Button
+        android:id="@+id/btn_input_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/input_style"
+        android:text="Upload Image"
+        android:textColor="#00BCD4"
+        app:layout_constraintStart_toStartOf="@+id/Email"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/input_style_login"
+        android:text="Upload"
+        android:textColor="#33907C"
+        app:layout_constraintStart_toStartOf="@+id/btn_input_image"
+        app:layout_constraintTop_toBottomOf="@+id/btn_input_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/signUptext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="304dp"
+        android:gravity="top"
+        android:text="Signup to your account"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/First_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_style"
+        android:hint="First Name"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/signUptext"
+        app:layout_constraintStart_toStartOf="@+id/signUptext"
+        app:layout_constraintTop_toBottomOf="@+id/signUptext" />
+
+
+    <EditText
+        android:id="@+id/Last_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+    android:background="@drawable/input_style"
+    android:hint="Last Name"
+        android:textColor="@color/white"
+    android:maxLines="1"
+    android:paddingStart="20dp"
+    android:textColorHint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/First_Name" />
+
+    <EditText
+        android:id="@+id/Email_Mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_style"
+    android:hint="Email/Mobile Number"
+        android:textColor="@color/white"
+
+    android:maxLines="1"
+    android:paddingStart="20dp"
+    android:textColorHint="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/Last_Name" />
+
+    <EditText
+        android:id="@+id/create_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+    android:background="@drawable/input_style"
+    android:hint="Enter Password"
+        android:inputType="textPassword"
+    android:maxLines="1"
+    android:paddingStart="20dp"
+    android:textColorHint="@color/white"
+        android:textColor="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/Email_Mobile" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_style_login"
+        android:text="Create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#33907C"
+        app:layout_constraintTop_toBottomOf="@+id/create_password" />
+    <!-- Vertical guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"
+    />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
